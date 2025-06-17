@@ -1,0 +1,335 @@
+:root {
+    --primary: #5b9405;
+    --accent: #aeea85;
+    --bg: #040248;
+    --text: #d5d3d3;
+    --card-bg: #69686875;
+    --card-shadow: 0 2px 16px rgba(82, 157, 242, 0.184);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    font-size: 18px;
+}
+
+nav {
+    background: var(--primary);
+    color: #6c91548c;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #1c03dc77;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--accent);
+    color: #f2efefec;
+}
+
+#nav1 {
+    background: var(--primary);
+    color: #6c91548c;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#nav1 a {
+    color: #1c03dc77;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+#nav1 a:hover,
+#nav1 a.active {
+    background: var(--accent);
+    color: #f2efefec;
+}
+
+section {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.2rem;
+}
+
+.hero {
+    background: linear-gradient(110deg, #e3f2fd 60%, #fff 100%);
+    border-radius: 18px;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    padding: 3rem 1rem 2.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.hero a {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.9em 2.2em;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.11);
+    transition: background 0.2s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.hero a:hover {
+    background: var(--accent);
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-content {
+    font-size: 1.13rem;
+    color: #b4b2b2;
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.services-list a {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.9em 2.2em;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.11);
+    transition: background 0.2s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.services-list a:hover {
+    background: var(--accent);
+}
+
+.service-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    width: 300px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 24px rgba(21, 101, 192, 0.10);
+}
+
+.service-card h3 {
+    margin: 0.5rem 0 0.7rem 0;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.service-card ul {
+    padding-left: 1.2em;
+    margin: 0.5em 0 0.7em 0;
+    font-size: 1em;
+}
+
+.pros-cons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.pros-cons-table th,
+.pros-cons-table td {
+    padding: 1em 0.8em;
+    border-bottom: 1px solid #36353546;
+    text-align: left;
+}
+
+.pros-cons-table th {
+    background: #c5c5c53b;
+    color: var(--primary);
+    font-size: 1.1em;
+}
+
+.pros-cons-table tr:last-child td {
+    border-bottom: none;
+}
+
+.feedback-link a {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.9em 2.2em;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.11);
+    transition: background 0.2s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.feedback-link a:hover {
+    background: var(--accent);
+}
+
+.feedback-form {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto 0 auto;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 1rem 0 0.3rem 0;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 7px;
+    border: 1px solid #6b6a6a88;
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+
+.feedback-form button {
+    background: var(--accent);
+    color: #2f2e2e7e;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.feedback-form button:hover {
+    background: #54c85a97;
+}
+
+.success-msg {
+    color: #43a047;
+    text-align: center;
+    margin-top: 1em;
+    display: none;
+}
+
+footer {
+    background: #012a55b7;
+    color: #bfbbbb;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-contact {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-contact a {
+    color: #bfbbbb;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1em;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .about-content,
+    .feedback-form {
+        padding: 1rem;
+    }
+}

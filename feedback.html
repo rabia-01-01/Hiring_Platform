@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Best Web Dev Hiring Platforms __ Feedback Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="nav1">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Platforms</a>
+    <a href="index.html#proscons">Pros & Cons</a>
+    <a href="#feedback" class="active">Feedback</a>
+  </div>
+
+  <!-- Feedback Section -->
+  <section id="feedback">
+    <h2 class="section-title">We Value Your Feedback</h2>
+    <form class="feedback-form" id="feedbackForm">
+      <label for="name">Name (optional):</label>
+      <input type="text" id="name" name="name">
+      <label for="role">Your Role:</label>
+      <select id="role" name="role">
+        <option value="">Select</option>
+        <option value="founder">Founder/Manager</option>
+        <option value="developer">Web Developer</option>
+        <option value="designer">Designer</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="feedbackText">Your Feedback or Suggestions:</label>
+      <textarea id="feedbackText" name="feedbackText" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <div class="success-msg" id="successMsg">Thank you for your feedback!</div>
+  </section>
+  <footer>
+    <div>
+      &copy; 2025 Web Dev Squad. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
